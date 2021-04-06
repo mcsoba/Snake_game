@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/registUpload2"
+        android:layout_width="109dp"
+        android:layout_height="33dp"
+        android:text="@string/registupload2"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toEndOf="@+id/userAvatar"
+        app:layout_constraintTop_toTopOf="@+id/userAvatar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="79dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/registUpload"
+        android:layout_width="109dp"
+        android:layout_height="33dp"
+        android:text="@string/registupload"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toEndOf="@+id/userAvatar"
+        app:layout_constraintTop_toTopOf="@+id/userAvatar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/userName"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/userAvatar" />
+
+    <EditText
+        android:id="@+id/logEmail"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/logPass"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="@string/logPass"
+        android:inputType="textPassword"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/logEmail" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="27dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/gendertext"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpass" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="180dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cpass">
+
+        <RadioButton
+            android:id="@+id/rgMale"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="@string/gendermale"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rgFemale"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:text="@string/genderfemale"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rgOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/genderother"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/cpass"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:hint="@string/cpass"
+        android:inputType="textPassword"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/logPass" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/mainregbut"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/agreement"
+        app:layout_constraintBottom_toBottomOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <CheckBox
+        android:id="@+id/agreementcheckbox"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/agreementcheckbox"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/agreement"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/txtWarName"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="224dp"
+        android:text="TextView"
+        android:textColor="#F10909"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <TextView
+        android:id="@+id/txtWarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="#EF0E0E"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/logEmail"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtWarpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#EC1010"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/logPass"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/logEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtWarcpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#E41111"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/cpass"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/logPass"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="185dp" />
+
+    <Button
+        android:id="@+id/backregbut"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/backregbut"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
